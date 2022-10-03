@@ -1,0 +1,75 @@
+.header-class{
+    display: flex;
+    width: 102%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(70, 68, 68);
+    color: white;
+    position: relative;
+    left: -10px;
+    top: -10px;
+    height: 100px;
+    overflow: hidden;
+}
+.title-moto{
+   padding-left: .7rem;
+}
+.options ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 1.4rem;
+}
+.options li{
+    list-style: none;
+    cursor: pointer;
+    padding: .5rem;
+    transition: 200ms;
+}
+.options li:hover{
+    transform: scale(1.1);
+}
+.options li:active{
+    background-color: lightgray;
+    border-radius: 1rem;
+}
+.link-buttons{
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+.connect-button{
+    background: lightgray;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+@media screen and (max-width: 1024px){
+/* .header-class { width: 100%; } */
+    .title-moto{
+        font-size: .7rem;
+    }
+    .options ul{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .header-class {
+        width: 105%;
+    }
+    .title-moto{
+        font-size: .7rem;
+    }
+    .options ul{
+        font-size: .8rem;
+        display: block;
+        text-align: center;
+    }
+    .connect-button{
+        text-align: center;
+        font-size: .9rem;
+    }
+}

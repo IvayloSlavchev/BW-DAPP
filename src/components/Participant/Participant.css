@@ -1,0 +1,104 @@
+.not-connected {
+    background-color: rgb(70, 68, 68);
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 6.1rem;
+    text-align: center;
+    color: white;
+}
+
+.about-become-participant-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.btns,
+.btns-2 {
+    width: 40%;
+    padding: .6rem;
+    font-size: 1rem;
+    background: linear-gradient(to left, rgb(66, 65, 65) 50%, rgb(174, 170, 170) 50%) right;
+    background-size: 200%;
+    transition: .4s;
+    color: white;
+    border: 1px solid white;
+    border-radius: .4rem;
+    cursor: pointer;
+
+}
+
+.btns-2 {
+    background: linear-gradient(to left, rgb(66, 65, 65) 50%, rgb(174, 170, 170) 50%) right;
+    background-size: 200%;
+    transition: .4s;
+}
+
+.btns:hover {
+    background-position: left;
+}
+
+.btns-2:hover {
+    background-position: left;
+    color: black;
+    border: 1px solid black;
+}
+
+.table-info {
+    margin-top: 4rem;
+    margin-left: 2rem;
+
+}
+
+.table-content {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: .9em;
+    min-width: 400px;
+    margin-left: 3rem;
+}
+
+.table-content thead tr {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.table-content th,
+.table-content td {
+    padding: 12px 15px;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .quote-buttons {
+        width: 170%;
+        font-size: .7rem;
+    }
+
+    .about-become-participant-button {
+        width: 59%;
+    }
+
+    .txt {
+        text-align: center;
+        color: white;
+        width: 60%;
+        font-size: 1.3rem;
+    }
+    .table-content{
+        margin-left: -27px;
+    }
+    .btns,
+    .btns-2 {
+        width: 100%;
+        font-size: .9rem;
+        padding: .6rem;
+    }
+}

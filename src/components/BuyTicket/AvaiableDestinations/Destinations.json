@@ -1,0 +1,14 @@
+[
+    {
+        "id" : 1,
+        "image" : "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+        "city" : "Dubai, UAE",
+        "price": 0.05
+    },
+    {
+        "id" : 2,
+        "image" : "https://images.unsplash.com/photo-1594220673602-74bf25a60870?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "city" : "LA, USA",
+        "price": 0.05
+    }
+]

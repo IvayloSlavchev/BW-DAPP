@@ -1,0 +1,49 @@
+.main{
+    height: 100vh;
+    overflow: hidden;
+}
+.main-page{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(70, 68, 68);
+    color: white;
+    position: relative;
+    left: -10px;
+    top: -5px;
+    padding: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+.buy-ticket {
+    padding: .5rem;
+    width: 60%;
+    margin-top: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: linear-gradient(to left, white 50%, rgb(70, 68, 68) 50%) right;
+    background-size: 200%;
+    transition: .4s;
+    font-family: sans-serif;
+}
+
+.buy-ticket:hover {
+    background-position: left;
+    color: white;
+    border: 1px solid white;
+    font-family: sans-serif;
+}
+.DAO img{
+    max-width: 520px;
+    border-radius: 1rem;
+}
+@media screen and (max-width: 800px) {
+    .main-page{
+        font-size: .8rem;
+    }
+    .DAO img{
+        max-width: 320px;
+    }
+}

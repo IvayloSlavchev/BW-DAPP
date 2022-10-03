@@ -1,0 +1,43 @@
+.destination {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    width: 100.5%;
+    background-color: rgb(70, 68, 68);
+    color: white;
+    position: absolute;
+    top: 96px;
+    left: 0;
+    height: 85%;
+}
+.destination img{
+    max-width: 490px;
+}
+.json-info{
+    text-align: center;
+    padding: .5rem;
+    margin-top: 4rem;
+}
+.buy-button{
+    width: 60%;
+    padding: .6rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background: linear-gradient(to left, rgb(66, 65, 65) 50%, rgb(174, 170, 170) 50%) right;
+    background-size: 201%;
+    transition: .4s;
+}
+.buy-button:hover{
+    background-position: left;
+    border: 1px solid black;
+    color: black;
+}
+@media screen and (max-width: 1038px){
+    .destination{
+        grid-template-columns: repeat(1, 1fr);
+        height: 190%;
+    }
+}
