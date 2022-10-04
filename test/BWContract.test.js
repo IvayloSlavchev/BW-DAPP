@@ -44,14 +44,13 @@ describe("BWContract", () => {
         });
     })
     describe("If user doesn't provide correct values", () => {
-        it('Should fail if user doesn\'t provide correct price for the ticket', async () => {
-            const buyATicket = await bwcontract.buyTicket("LA", { value: '200000000000000000' });
-            expect(buyATicket).to.be.reverted;
+        it('Should fail if user doesn\'t provide correct price for the ticket', () => {
+            expect(bwcontract.buyTicket("LA", { value: '200000000000000000' })).to.be.reverted;
         });
         it('Should not allow user to join the DAO if doesn\'t provide enough ether', async () => {
-            await bwcontract.becomeParticipant({value: '13000000000000000000'})
+            expect(bwcontract.becomeParticipant({value: '13000000000000000000'})).to.be.reverted;
             const stakedEtherTest = await bwcontract.stakedEther(deployer.address);
-            expect(stakedEtherTest).to.be.reverted;
+            expect(stakedEtherTest).to.be.equal(0);
         })
     })
 })
